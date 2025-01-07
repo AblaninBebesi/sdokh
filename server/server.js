@@ -55,7 +55,7 @@ const server = app.listen(PORT, console.log(`Сервер поднят на по
 const io = require('socket.io')(server, {
     pingTumeout: 60000,
     cors: {
-        origin: "http://127.0.0.1:3000",
+        origin: "https://sdokh.onrender.com",
         methods: ['GET', 'POST'],
         credentials: true,
     },
