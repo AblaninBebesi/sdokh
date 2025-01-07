@@ -8,7 +8,7 @@ import Peer from "simple-peer";
 import Call from '../call/Call'
 import './chatbox.css'
 
-const ENDPOINT = "https://localhost:8080";
+const ENDPOINT = "https://sdokh.onrender.com";
 var selectedCharCompare;
 const callData = {
   socketId: '',
