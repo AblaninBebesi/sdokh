@@ -1,0 +1,35 @@
+.chat-container {
+    background-image: url("../../public/bg_mob.jpg");
+    background-size: 100% 100%;
+    height: 100vh;
+}
+@media screen and (min-width: 1000px) {
+    .chat-container {
+        background-image: url("../../public/bg.jpg");
+    }
+
+    .chat-inner {
+        row-gap: 2em;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: "side main";
+    }
+}
+
+.chat-inner {
+    width: 100%;
+    padding: .75em;
+    display: grid;
+    max-width: 100vw;
+}
+
+.sidebar {
+    display: grid;
+    height: calc(100%-4em);
+    margin-top:4em;
+    grid-area: side;
+}
+
+.main-box {
+    grid-area: main;
+    min-height: 85vh;
+}

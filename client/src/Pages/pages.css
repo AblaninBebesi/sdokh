@@ -1,0 +1,29 @@
+.homepage {
+    background-image: url("../../public/bg_mob.jpg");
+    background-size: 100% 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--color4);
+}
+
+@media screen and (min-width: 1000px) {
+    .homepage {
+        background-image: url("../../public/bg.jpg");
+    }
+}
+
+.home-header {
+    padding: 2.5rem;
+}
+
+.home-login {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-container {
+    width: 100vw;
+}

@@ -1,0 +1,78 @@
+.header{
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+    max-width: 100vw;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+}
+
+.header-title {
+    margin-top: .5em;
+}
+
+.dropdown-label {
+    position: relative;
+    padding: .7em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    padding: 1em 1.5em;
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border-radius: 16px;
+    box-shadow: 0 5px 5px rgba(54, 54, 54, 0.4);
+}
+
+.profile-dropdown {
+    right: .5em;
+}
+.search-dropdown {
+    min-width: 10em;
+    
+}
+
+.search-label:hover .search-dropdown {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+}
+
+.profile-label:hover .profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+}
+
+.header-btn {
+    border-radius: 12px;
+    text-align: center;
+    width: 10em;
+}
+
+.header-btn:hover {
+    color: var(--color0);
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.user-search {
+    display: inline-flex;
+    padding-bottom: 1em;
+}
+
+.search-input {
+    padding: .3rem;
+    margin-right: .5em;
+    border-radius: 16px;
+    background: none;
+    border: 2px solid rgba(17, 17, 17, 0.22);
+}

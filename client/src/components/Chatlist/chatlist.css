@@ -1,0 +1,33 @@
+.chat-select:hover {
+    cursor: pointer;
+    color: var(--color1) !important;
+}
+
+.chat-select {
+    margin-bottom: .7em;
+    padding: .5em .75em;
+    box-shadow: 0 1px 1px rgba(17, 17, 17, 0.22);
+    transition: .3s ease;
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+}
+
+.chat-select-user {
+    color: var(--color4);
+    margin-bottom: .5em;
+    font-weight: bolder;
+    text-shadow: 0 0 1px rgba(17, 17, 17, 0.22);
+}
+
+.chat-list {
+    padding: 1em;
+}
+
+
+.latest-msg {
+    height: 1em;
+    color: var(--color3);
+    font-size: .9em;
+    text-overflow: clip;
+}
