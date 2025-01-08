@@ -36,7 +36,7 @@ const ChatList = ({ fetchAgain }) => {
                 <>{chats.map((chat) => (
                     <div key={chat._id} onClick={() => setSelectedChat(chat)} className="chat-select">
                         <p className="chat-select-user">{getSender(loggedUser, chat.users)}</p>
-                        <span className='latest-msg'>{chat.latestMessage.sender.name}: {chat.latestMessage.content.slice(0, 50 - chat.latestMessage.sender.name.length)}</span>
+                { chat.latestMessage && <span className='latest-msg'>{chat.latestMessage.sender.name}: {chat.latestMessage.content.slice(0, 50 - chat.latestMessage.sender.name.length)}</span>}
                     </div>
                 ))}</>
             )}
